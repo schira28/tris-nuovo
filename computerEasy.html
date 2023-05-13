@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player VS Computer (facile)</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    
+    <div class="modal-content">
+        <h3>Ha vinto il giocatore <span id="winner"></span></h3>
+    </div>
+
+    <h1 id="title">TIC-TAC-TOE</h1>
+
+    <div class="points">
+
+        <div id="counterP1" class="counter">
+            <span id="p1Text" class="counterText">Player: 0</span>
+        </div>
+        <div id="counterP2" class="counter">
+            <span id="p2Text" class="counterText">Computer: 0</span>
+        </div>
+
+    </div>
+
+    <div class="table">
+        <div id="Cell_1" class="cell" data-Xaxis="0" data-Yaxis="0"></div>
+		
+        <div id="Cell_2" class="cell" data-Xaxis="1" data-Yaxis="0"></div>
+		
+        <div id="Cell_3" class="cell" data-Xaxis="2" data-Yaxis="0"></div>
+		
+        <div id="Cell_4" class="cell" data-Xaxis="0" data-Yaxis="1"></div>
+			
+        <div id="Cell_5" class="cell" data-Xaxis="1" data-Yaxis="1"></div>
+			
+        <div id="Cell_6" class="cell" data-Xaxis="2" data-Yaxis="1"></div>
+			
+        <div id="Cell_7" class="cell" data-Xaxis="0" data-Yaxis="2"></div>
+
+		<div id="Cell_8" class="cell" data-Xaxis="1" data-Yaxis="2"></div>
+			
+        <div id="Cell_9" class="cell" data-Xaxis="2" data-Yaxis="2"></div>
+    </div>
+
+    <div class="controls">
+        <a href="index.html"><button id="indietroBTN">INDIETRO</button></a>
+        <button id="resetBTN" onclick="reset()">RESET</button>
+    </div>
+
+    <script src="static/js/computerEasy.js"></script>
+</body>
+</html>
